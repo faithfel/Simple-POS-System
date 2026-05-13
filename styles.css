@@ -1,19 +1,30 @@
 body { 
     font-family: sans-serif; 
     background: #f4f4f4; 
-    padding: 20px; 
+
 }
 .grid { 
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
-    gap: 10px; }
+    gap: 10px; 
+    float: left; 
+    width: 67%; 
+}
 .product-card { 
     background: #fff; 
     padding: 15px; 
     border-radius: 8px; 
     text-align: center; 
 }
-#cart { background: #fff; padding: 20px; border-radius: 8px; margin-top: 20px; }
+#cart { 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    float: right; 
+    width: 30%; 
+    min-height: 100vh;
+    margin-bottom: 10px;
+}
 
 /* Print Logic */
 @media print {
@@ -26,3 +37,9 @@ body {
 product-img {
     max-height: 500px;
 }
+
+page-container {
+    display: flex;
+}
+
+total-container

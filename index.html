@@ -8,6 +8,7 @@
     
 </head>
 <body>
+    <div class="page-container">
     <div class="container no-print">
         <header><h1>BLITZ GAMING</h1></header>
         <main>
@@ -17,8 +18,11 @@
             <aside id="cart">
                 <h2>Cart</h2>
                 <div id="cart-items"></div>
-                <div class="total">Total: ₱<span id="total-price">0.00</span></div>
-                <button onclick="printReceipt()" id="btnPrint">Print Receipt</button>
+                <div class="total-container">
+                    <hr>
+                    <div class="total">Total: ₱<span id="total-price">0.00</span></div>
+                    <button onclick="printReceipt()" id="btnPrint">Print Receipt</button>
+                </div>
             </aside>
         </main>
     </div>
@@ -37,6 +41,7 @@
         <hr>
         <h3 align="right">Total: ₱<span id="receipt-total"></span></h3>
         <center><p>Thank you for shopping!</p></center>
+    </div>
     </div>
 
     <script src="script.js"></script>
