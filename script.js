@@ -1,7 +1,8 @@
 const products = [
     { id: 1, name: "Coffee", price: 5.00 },
     { id: 2, name: "Sandwich", price: 8.50 },
-    { id: 3, name: "Cookie", price: 2.00 }
+    { id: 3, name: "Cookie", price: 2.00 },
+    { id: 4, name: "Bread", price: 4.00, img: "" }
 ];
 
 let cart = [];
@@ -11,6 +12,7 @@ function init() {
     products.forEach(p => {
         productDiv.innerHTML += `
             <div class="product-card">
+                <img src="${p.img}">
                 <h3>${p.name}</h3>
                 <p>$${p.price.toFixed(2)}</p>
                 <button onclick="addToCart(${p.id})">Add</button>
