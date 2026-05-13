@@ -9,6 +9,7 @@ body {
     gap: 10px; 
     float: left; 
     width: 67%; 
+
 }
 .product-card { 
     background: #fff; 
@@ -24,7 +25,8 @@ body {
     width: 30%; 
     min-height: 100vh;
     margin-bottom: 10px;
-}
+    display: flex;
+    flex-direction: column;}
 
 /* Print Logic */
 @media print {
@@ -42,4 +44,6 @@ page-container {
     display: flex;
 }
 
-total-container
+total-container{
+    bottom: 0;
+}
