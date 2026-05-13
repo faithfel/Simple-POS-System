@@ -1,0 +1,24 @@
+body { 
+    font-family: sans-serif; 
+    background: #f4f4f4; 
+    padding: 20px; 
+}
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; }
+.product-card { 
+    background: #fff; 
+    padding: 15px; 
+    border-radius: 8px; 
+    text-align: center; 
+}
+#cart { background: #fff; padding: 20px; border-radius: 8px; margin-top: 20px; }
+
+/* Print Logic */
+@media print {
+    .no-print { display: none !important; }
+    .print-only { display: block !important; width: 80mm; /* Standard receipt width */ }
+}
+.print-only { display: none; }
+#receipt-table { width: 100%; border-collapse: collapse; }

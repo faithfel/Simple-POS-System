@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS SYSTEM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container no-print">
+        <header><h1>Store POS</h1></header>
+        <main>
+            <div id="product-list" class="grid">
+                <!-- Products will be injected here -->
+            </div>
+            <aside id="cart">
+                <h2>Cart</h2>
+                <div id="cart-items"></div>
+                <div class="total">Total: $<span id="total-price">0.00</span></div>
+                <button onclick="printReceipt()" id="btnPrint">Print Receipt</button>
+            </aside>
+        </main>
+    </div>
+
+    <!-- Hidden Receipt Section -->
+    <div id="receipt-print" class="print-only">
+        <center>
+            <h2>STORE NAME</h2>
+            <p>Date: <span id="receipt-date"></span></p>
+        </center>
+        <hr>
+        <table id="receipt-table">
+            <thead><tr><th>Item</th><th>Qty</th><th>Price</th></tr></thead>
+            <tbody id="receipt-body"></tbody>
+        </table>
+        <hr>
+        <h3 align="right">Total: $<span id="receipt-total"></span></h3>
+        <center><p>Thank you for shopping!</p></center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
