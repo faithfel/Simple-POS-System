@@ -12,9 +12,9 @@ function init() {
     products.forEach(p => {
         productDiv.innerHTML += `
             <div class="product-card">
-                <img src="${p.img}">
+                <img class="product-img" src="${p.img}">
                 <h3>${p.name}</h3>
-                <p>$${p.price.toFixed(2)}</p>
+                <p>₱${p.price.toFixed(2)}</p>
                 <button onclick="addToCart(${p.id})">Add</button>
             </div>`;
     });
@@ -30,7 +30,7 @@ function addToCart(id) {
 function renderCart() {
     const cartDiv = document.getElementById('cart-items');
     const totalSpan = document.getElementById('total-price');
-    cartDiv.innerHTML = cart.map(item => `<p>${item.name} x ${item.qty} - $${(item.price * item.qty).toFixed(2)}</p>`).join('');
+    cartDiv.innerHTML = cart.map(item => `<p>${item.name} x ${item.qty} - ₱${(item.price * item.qty).toFixed(2)}</p>`).join('');
     const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
     totalSpan.innerText = total.toFixed(2);
 }
@@ -42,7 +42,7 @@ function printReceipt() {
     document.getElementById('receipt-date').innerText = new Date().toLocaleString();
     const receiptBody = document.getElementById('receipt-body');
     receiptBody.innerHTML = cart.map(item => `
-        <tr><td>${item.name}</td><td>${item.qty}</td><td>$${(item.price * item.qty).toFixed(2)}</td></tr>
+        <tr><td>${item.name}</td><td>${item.qty}</td><td>₱${(item.price * item.qty).toFixed(2)}</td></tr>
     `).join('');
     document.getElementById('receipt-total').innerText = document.getElementById('total-price').innerText;
     
