@@ -36,8 +36,8 @@ body {
 .print-only { display: none; }
 #receipt-table { width: 100%; border-collapse: collapse; }
 
-product-img {
-    max-height: 500px;
+img {
+    height: 250px;
 }
 
 page-container {
