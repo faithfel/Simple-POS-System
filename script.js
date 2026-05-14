@@ -38,7 +38,6 @@ function renderCart() {
 function printReceipt() {
     if (cart.length === 0) return alert("Cart is empty!");
     
-    // Fill the hidden receipt section
     document.getElementById('receipt-date').innerText = new Date().toLocaleString();
     const receiptBody = document.getElementById('receipt-body');
     receiptBody.innerHTML = cart.map(item => `
@@ -46,7 +45,7 @@ function printReceipt() {
     `).join('');
     document.getElementById('receipt-total').innerText = document.getElementById('total-price').innerText;
     
-    // Trigger standard print dialog
+  
     window.print();
 }
 

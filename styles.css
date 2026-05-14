@@ -47,3 +47,12 @@ page-container {
 total-container{
     bottom: 0;
 }
+
+
+button {
+    background-color: #ee5252;
+    color:#fff;
+    border-style: none;
+    padding: 8px;
+    border-radius: 4px;
+}
