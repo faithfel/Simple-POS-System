@@ -1,8 +1,8 @@
 const products = [
     { id: 1, name: "COLORFUL IGame GeForce RTX 5050 Ultra", price: 19590, img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSBin4NQTFLWY39Q6iya-ISuC0pyuKAY2cSweBDPeiHn10KMwSOrTXwIqTOkJYnZwYkkiPFfYoR8Eq7N6KUw01y0-6ct1Pn"  },
     { id: 2, name: "Gigabyte Rtx 5060 Windforce Max Oc 8gb Gddr7 Graphic Card", price: 22500, img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRzCqX_HsP2rGD1JQd2MQcqv5Qh7mL2Htepxzls_Mj6HSHZhmu4-XtsX_Cdwc_k4sIHDKr42GH_bAqMPbn59QOLn890aE5r"  },
-    { id: 3, name: "Cookie", price: 2.00, img: ""  },
-    { id: 4, name: "Bread", price: 4.00, img: "" }
+    { id: 3, name: "Sapphire Pulse AMD Radeon RX 9060 XT", price: 20500, img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSeAY1s3CSVNLZtn-TyIeyZY_H7XTRu3IkFE-xE0V7luuj9OF9TqIqZYRIG6WfSgXVXnjwWgBpZyilHYn6P9F2QTgA6RphJ01lENqQPg_Mfet31YbnyR5xoatg"  },
+    { id: 4, name: "ASRock AMD Radeon RX 9060 XT Challenger 8GB", price: 20950, img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSruukRAHVMpFcvLHgBrMCVPjxTpbp9Mr2G9NtRvZlAnR7fWqcxkb6jsuIra3lJu098M_OVCas5RE5OdpXwECUev5nYM0WjnA" }
 ];
 
 let cart = [];
