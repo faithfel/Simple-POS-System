@@ -11,17 +11,22 @@
 <body>
     <div class="page-container">
     <div class="container no-print">
-        <header><h1>BLITZ GAMING</h1></header>
+        <header>
+            <div class="header-container">
+                <img class="logo" src="https://cdn.pixabay.com/photo/2024/01/25/06/56/gaming-logo-8531082_1280.png">
+                <h1>BLITZ GAMING</h1>
+            </div>
+        </header>
         <main>
             <div id="product-list" class="grid">
                 
             </div>
             <div id="cart">
-                <span><h2>Cart</h2><i class="fi fi-br-shopping-cart"></i></i></i></span>
+                <span><h1>Cart</h1><i class="fi fi-br-shopping-cart"></i></i></i></span>
                 <div id="cart-items"></div>
                 <div class="total-container">
                     <hr>
-                    <div class="total">Total: ₱<span id="total-price">0.00</span></div>
+                    <div class="total"><p>Total: ₱<span id="total-price">0.00</span></div>
                     <button onclick="printReceipt()" id="btnPrint">Print Receipt</button>
                 </div>
             </div>

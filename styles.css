@@ -1,7 +1,8 @@
 body { 
     font-family: sans-serif; 
-    background: #f4f4f4; 
-
+    background-image: url('https://github.com/faithfel/unifiedsystem-laravel/blob/main/unifiedsystem/public/bg.gif?raw=true');
+    background-repeat: repeat;
+    background-size: 700px;
 }
 .grid { 
     display: grid; 
@@ -12,21 +13,26 @@ body {
 
 }
 .product-card { 
-    background: #fff; 
+    background: #16161641; 
     padding: 15px; 
     border-radius: 8px; 
     text-align: center; 
+    backdrop-filter: blur(4px);
+    border: 1px solid #303030;
 }
 #cart { 
-    background: #fff; 
+    background: #16161641; 
+    backdrop-filter: blur(4px);
+    border: 1px solid #303030;
+    min-height: 100vh;
     padding: 20px; 
     border-radius: 8px; 
     float: right; 
     width: 30%; 
-    min-height: 100vh;
-    margin-bottom: 10px;
+    min-height: 1750px;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
 
 /* Print Logic */
 @media print {
@@ -38,6 +44,8 @@ body {
 
 img {
     height: 250px;
+    border-radius: 8px;
+    margin: 8px;
 }
 
 page-container {
@@ -50,9 +58,23 @@ total-container{
 
 
 button {
-    background-color: #ee5252;
-    color:#fff;
+    background-color: #0AC5CF;
+    color:#011E39;
     border-style: none;
     padding: 8px;
     border-radius: 4px;
 }
+
+ h1, h2, h3 , p {
+    color: #fff;
+}
+
+.logo {
+    height: 60px;
+    border-radius: 100px;
+}
+
+.header-container {
+    display: flex;
+}
+
